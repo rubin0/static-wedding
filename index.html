@@ -16,6 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://db.onlinewebfonts.com/c/4889abdc206b7ade5628246106ebf44d?family=Acroterion+JF"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome -->
     <link
@@ -53,22 +57,22 @@
         class="collapse navbar-collapse justify-content-between"
         id="navbarCollapse"
       >
-        <div class="navbar-nav ml-auto py-0">
-          <a href="#home" class="nav-item nav-link active">Home</a>
-          <a href="#about" class="nav-item nav-link">Noi</a>
-          <a href="#story" class="nav-item nav-link">Storia</a>
-          <a href="#gallery" class="nav-item nav-link">Gallery</a>
-        </div>
         <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
           <h1 class="font-secondary text-white mb-n2">
             Teodoro <span class="text-primary">&</span> Laura
           </h1>
         </a>
+        <div class="navbar-nav ml-auto py-0">
+          <a href="#home" class="nav-item nav-link active">Home</a>
+          <a href="#countdown" class="nav-item nav-link">Countdown</a>
+          <a href="#about" class="nav-item nav-link">Noi</a>
+          <a href="#gallery" class="nav-item nav-link">Gallery</a>
+        </div>
+
         <div class="navbar-nav mr-auto py-0">
-          <a href="#family" class="nav-item nav-link">Testimoni</a>
           <a href="#event" class="nav-item nav-link">Evento</a>
+          <a href="#family" class="nav-item nav-link">Testimoni</a>
           <a href="#gift" class="nav-item nav-link">Lista Nozze</a>
-          <a href="#contact" class="nav-item nav-link">Contatti</a>
         </div>
       </div>
     </nav>
@@ -108,6 +112,12 @@
                     Siete cordialmente invitati al nostro matrimonio
                   </h3>
                 </div>
+                <h2
+                  class="text-uppercase font-weight-normal text-white m-0 pt-3"
+                  style="letter-spacing: 2px"
+                >
+                  14 Settembre 2024
+                </h2>
               </div>
             </div>
           </div>
@@ -134,9 +144,15 @@
                     class="text-uppercase font-weight-normal text-white m-0"
                     style="letter-spacing: 2px"
                   >
-                    Siete invitati al nostro matrimonio
+                    Siete cordialmente invitati al nostro matrimonio
                   </h3>
                 </div>
+                <h2
+                  class="text-uppercase font-weight-normal text-white m-0 pt-3"
+                  style="letter-spacing: 2px"
+                >
+                  14 Settembre 2024
+                </h2>
               </div>
             </div>
           </div>
@@ -162,43 +178,43 @@
       </div>
     </div>
     <!-- Carousel End -->
-
-    <!-- Video Modal Start -->
-    <div
-      class="modal fade"
-      id="videoModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
+    <!-- Video Modal End -->
+    <div class="container-fluid py-5" id="countdown">
+      <div class="container py-3">
+        <div class="section-title position-relative text-center">
+          <h6
+            class="text-uppercase text-primary mb-3"
+            style="letter-spacing: 3px"
+          >
+            Countdown
+          </h6>
+          <i class="far fa-heart text-dark"></i>
+        </div>
+        <div class="row justify-content-center m-0 mb-4 mb-md-0 pb-2 pb-md-0">
+          <div class="col-md-6 p-0 text-center">
+            <div
+              id="end"
+              class="position-relative text-center"
+              style="display: none"
             >
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <!-- 16:9 aspect ratio -->
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe
-                class="embed-responsive-item"
-                src=""
-                id="video"
-                allowscriptaccess="always"
-                allow="autoplay"
-              ></iframe>
+              <h4 class="text-uppercase mb-3" style="letter-spacing: 3px">
+                🎉 Felicemente sposati! 🎉
+              </h4>
             </div>
+            <ul id="counter" class="row text-center m-0 p-0">
+              <li class="col-sm-6 col-md-3"><span id="days"></span>giorni</li>
+              <li class="col-sm-6 col-md-3"><span id="hours"></span>ore</li>
+              <li class="col-sm-6 col-md-3">
+                <span id="minutes"></span>minuti
+              </li>
+              <li class="col-sm-6 col-md-3">
+                <span id="seconds"></span>secondi
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-    <!-- Video Modal End -->
-
     <!-- About Start -->
     <div class="container-fluid py-5" id="about">
       <div class="container py-3">
@@ -207,7 +223,7 @@
             class="text-uppercase text-primary mb-3"
             style="letter-spacing: 3px"
           >
-            About
+            Noi
           </h6>
           <h1 class="font-secondary display-4">Sposo & Sposa</h1>
           <i class="far fa-heart text-dark"></i>
@@ -217,30 +233,13 @@
             <div
               class="h-100 d-flex flex-column justify-content-center bg-secondary p-5"
             >
-              <h3 class="mb-3">Lo Sposo</h3>
+              <h3 class="mb-3">Lo Sposo: Teodoro 🤵🏻</h3>
               <p>
                 Lorem elitr magna stet rebum dolores sed. Est stet labore est
                 lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea
                 lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est
                 dolor elitr.
               </p>
-              <h3 class="font-secondary font-weight-normal text-muted mb-3">
-                <i class="fa fa-male text-primary pr-3"></i>Teodoro
-              </h3>
-              <div id="social-groom" class="position-relative">
-                <a class="btn btn-outline-primary btn-square mr-1" href="#"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a class="btn btn-outline-primary btn-square mr-1" href="#"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a class="btn btn-outline-primary btn-square mr-1" href="#"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-                <a class="btn btn-outline-primary btn-square" href="#"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </div>
             </div>
           </div>
           <div class="col-md-6 p-0" style="min-height: 400px">
@@ -263,132 +262,19 @@
             <div
               class="h-100 d-flex flex-column justify-content-center bg-secondary p-5"
             >
-              <h3 class="mb-3">La Sposa</h3>
+              <h3 class="mb-3">La Sposa: Laura 👰🏼‍♀️</h3>
               <p>
-                Lorem elitr magna stet rebum dolores sed. Est stet labore est
-                lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea
-                lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est
-                dolor elitr.
+                Sono una schiappa e Teo è Dio sceso in terra e sono veramente
+                fortunata ad averlo come sposo
               </p>
-              <h3 class="font-secondary font-weight-normal text-muted mb-3">
-                <i class="fa fa-female text-primary pr-3"></i>Laura
-              </h3>
-              <div class="position-relative">
-                <a class="btn btn-outline-primary btn-square mr-1" href="#"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-                <a class="btn btn-outline-primary btn-square mr-1" href="#"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a class="btn btn-outline-primary btn-square mr-1" href="#"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-                <a class="btn btn-outline-primary btn-square" href="#"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </div>
+
+              <div class="position-relative"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- About End -->
-
-    <!-- Story Start -->
-    <div class="container-fluid py-5" id="story">
-      <div class="container pt-5 pb-3">
-        <div class="section-title position-relative text-center">
-          <h6
-            class="text-uppercase text-primary mb-3"
-            style="letter-spacing: 3px"
-          >
-            Storia
-          </h6>
-          <h1 class="font-secondary display-4">La Nostra Storia D'Amore</h1>
-          <i class="far fa-heart text-dark"></i>
-        </div>
-        <div class="container timeline position-relative p-0">
-          <div class="row">
-            <div class="col-md-6 text-center text-md-right">
-              <img class="img-fluid mr-md-3" src="img/story-1.png" alt="" />
-            </div>
-            <div class="col-md-6 text-center text-md-left">
-              <div
-                class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3"
-              >
-                <h4 class="mb-2">Primo Incontro</h4>
-                <p class="text-uppercase mb-2">01 Jan 2050</p>
-                <p class="m-0">
-                  Lorem elitr magna stet rebum dolores sed. Est stet labore est
-                  lorem lorem at amet sea, eos tempor rebum, labore amet ipsum
-                  sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet
-                  est dolor elitr.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 text-center text-md-right">
-              <div
-                class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3"
-              >
-                <h4 class="mb-2">Primo Appuntamento</h4>
-                <p class="text-uppercase mb-2">01 Jan 2050</p>
-                <p class="m-0">
-                  Lorem elitr magna stet rebum dolores sed. Est stet labore est
-                  lorem lorem at amet sea, eos tempor rebum, labore amet ipsum
-                  sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet
-                  est dolor elitr.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6 text-center text-md-left">
-              <img class="img-fluid ml-md-3" src="img/story-2.png" alt="" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 text-center text-md-right">
-              <img class="img-fluid mr-md-3" src="img/story-3.png" alt="" />
-            </div>
-            <div class="col-md-6 text-center text-md-left">
-              <div
-                class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3"
-              >
-                <h4 class="mb-2">Proposta</h4>
-                <p class="text-uppercase mb-2">01 Jan 2050</p>
-                <p class="m-0">
-                  Lorem elitr magna stet rebum dolores sed. Est stet labore est
-                  lorem lorem at amet sea, eos tempor rebum, labore amet ipsum
-                  sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet
-                  est dolor elitr.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 text-center text-md-right">
-              <div
-                class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3"
-              >
-                <h4 class="mb-2">Fidanzamento</h4>
-                <p class="text-uppercase mb-2">01 Jan 2050</p>
-                <p class="m-0">
-                  Lorem elitr magna stet rebum dolores sed. Est stet labore est
-                  lorem lorem at amet sea, eos tempor rebum, labore amet ipsum
-                  sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet
-                  est dolor elitr.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6 text-center text-md-left">
-              <img class="img-fluid ml-md-3" src="img/story-4.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Story End -->
-
     <!-- Gallery Start -->
     <div
       class="container-fluid bg-gallery"
@@ -458,35 +344,28 @@
           <h1 class="font-secondary display-4">Il Nostro Matrimonio</h1>
           <i class="far fa-heart text-dark"></i>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-6 text-center">
-            <h5 class="font-weight-normal text-muted mb-3 pb-3">
-              Siete tutti invitati al nostro matrimonio. Bla Bla blaaa
-            </h5>
-          </div>
-        </div>
         <div class="row">
           <div class="col-md-6 border-right border-primary">
             <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
               <img class="img-fluid mb-4" src="img/event-1.jpg" alt="" />
               <h4 class="mb-3">La Cerimonia</h4>
               <p class="mb-2">
-                <a href="https://maps.app.goo.gl/EAGwj2xUE273KFzk8">
+                <a href="https://maps.app.goo.gl/Cjd6qp44qfeeSHMb7">
                   <i class="fas fa-map-marker-alt text-dark"></i>
-                  <span>Da qualche parte a Nicosia</span></a
+                  <span>Chiesa "San Michele Arcangelo" di Nicosia</span></a
                 >
               </p>
-              <p class="mb-0">12:00 - 13:00</p>
+              <p class="mb-0">Inizio: 10:30</p>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="text-center text-md-left ml-md-3">
+            <div class="text-center text-md-left ml-md-3 width">
               <img class="img-fluid mb-4" src="img/event-2.jpg" alt="" />
-              <h4 class="mb-3">La Festa</h4>
+              <h4 class="mb-3">Il Ricevimento</h4>
               <p class="mb-2">
-                <a href="https://maps.app.goo.gl/EAGwj2xUE273KFzk8">
+                <a href="https://maps.app.goo.gl/Hpwpg6NcQxWm5SGZ9">
                   <i class="fas fa-map-marker-alt text-dark"></i>
-                  <span>Da un'altra parte a Nicosia</span></a
+                  <span>Ristorante "La Torretta" Nicosia</span></a
                 >
               </p>
               <p class="mb-0">13:00 - 24:00</p>
@@ -505,12 +384,12 @@
             class="text-uppercase text-primary mb-3"
             style="letter-spacing: 3px"
           >
-            Amici & Famiglia
+            Testimoni
           </h6>
           <h1 class="font-secondary display-4">I Testimoni</h1>
           <i class="far fa-heart text-dark"></i>
         </div>
-        <div class="row portfolio-container">
+        <div class="row portfolio-containe justify-content-center">
           <div class="col-lg-3 col-md-6 mb-4 portfolio-item first">
             <div class="position-relative mb-2">
               <img
@@ -519,8 +398,7 @@
                 alt=""
               />
               <div class="bg-secondary text-center p-4">
-                <h4 class="mb-3">Andrea</h4>
-                <p class="text-uppercase">Testimone dello Sposo</p>
+                <h4>Andrea</h4>
               </div>
             </div>
           </div>
@@ -532,8 +410,7 @@
                 alt=""
               />
               <div class="bg-secondary text-center p-4">
-                <h4 class="mb-3">Selene</h4>
-                <p class="text-uppercase">Testimone della Sposa</p>
+                <h4>Selene</h4>
               </div>
             </div>
           </div>
@@ -541,8 +418,7 @@
             <div class="position-relative mb-2">
               <img class="img-fluid w-100" src="img/groomsmen-2.png" alt="" />
               <div class="bg-secondary text-center p-4">
-                <h4 class="mb-3">Simone</h4>
-                <p class="text-uppercase">Testimone dello Sposo</p>
+                <h4>Simone</h4>
               </div>
             </div>
           </div>
@@ -550,8 +426,30 @@
             <div class="position-relative mb-2">
               <img class="img-fluid w-100" src="img/bridesmaid-2.png" alt="" />
               <div class="bg-secondary text-center p-4">
-                <h4 class="mb-3">Roberta</h4>
-                <p class="text-uppercase">Testimone della Sposa</p>
+                <h4>Roberta</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid py-5" id="family">
+          <div class="container pt-1 pb-3">
+            <div class="section-title position-relative text-center">
+              <h1 class="font-secondary display-4">Damigella</h1>
+              <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row portfolio-containe justify-content-center">
+              <div class="col-lg-3 col-md-6 mb-4 portfolio-item second">
+                <div class="position-relative mb-2">
+                  <img
+                    class="img-fluid w-100"
+                    src="img/bridesmaid-2.png"
+                    alt=""
+                  />
+                  <div class="bg-secondary text-center p-4">
+                    <h4>Karen</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -570,17 +468,24 @@
           >
             Lista Nozze
           </h6>
-          <h1 class="font-secondary display-4">
-            Se volete contribuire a realizzare uno dei nostri sogni..
-          </h1>
-          <h4 class="font-primary display-6">IBAN: IT1231232131322</h4>
-          <h4 class="font-primary display-6">Intestato a Andrea Rubino ;D</h4>
-          <h4 class="font-primary display-7">Banca del banco di banca</h4>
-          <h4 class="font-primary display-7">
-            Causale: nome del regalo scelto
-          </h4>
+
           <i class="far fa-heart text-dark"></i>
         </div>
+        <div class="bg-secondary text-center p-4 mb-3">
+          <h3 class="mb-3">
+            Se volete contribuire a realizzare uno dei nostri sogni...
+          </h3>
+
+          <h5 class="font-primary display-6">
+            IBAN: IT84S0306983670100000005041
+          </h5>
+          <h5 class="font-primary display-6">Intestato a Teodoro Seminara</h5>
+          <h5 class="font-primary display-7">Banca Intesa Sanpaolo</h5>
+          <h5 class="font-primary display-7">
+            Come causale: regalo matrimonio - nome del regalo scelto
+          </h5>
+        </div>
+
         <div class="row portfolio-container">
           <div class="col-lg-4 col-md-6 mb-4 portfolio-item">
             <div class="position-relative mb-2">
@@ -629,11 +534,8 @@
     >
       <div class="container text-center py-3">
         <div class="section-title position-relative text-center">
-          <h1 class="font-secondary display-3 text-white">Grazie a tutti</h1>
+          <h1 class="font-secondary display-3 text-white">Grazie mille</h1>
           <i class="far fa-heart text-white"></i>
-        </div>
-        <div class="d-flex justify-content-center py-2">
-          <p class="text-white" href="#">+012 345 6789</p>
         </div>
         <p class="m-0">Designed by Andre with ♥️</p>
       </div>
@@ -658,5 +560,42 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Sep 14, 2024 10:30:30").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("end").style.display = "block";
+          document.getElementById("counter").style.display = "none";
+          return;
+        }
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+
+        // If the count down is finished, write some text
+      }, 1000);
+    </script>
   </body>
 </html>
